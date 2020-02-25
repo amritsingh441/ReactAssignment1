@@ -2,7 +2,7 @@ import Dashboard from '../Components/dashboard/Dashboard';
 // please add your test cases here
 import React from 'react';
 import {render,unmountComponentAtNode} from 'react-dom';
-import { act, isDOMComponent } from 'react-dom/test-utils';
+import { act } from 'react-dom/test-utils';
 // please add your test cases here
 let container = null;
 beforeEach(() => {
