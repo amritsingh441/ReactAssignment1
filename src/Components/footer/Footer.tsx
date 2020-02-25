@@ -8,10 +8,10 @@ const Footer = () => {
     return (
         <footer>
           <Container maxWidth="lg">
-            <Typography variant="subtitle1" color="textSecondary" align="center" gutterBottom>
+            <Typography id="footer1" variant="subtitle1" color="textSecondary" align="center" gutterBottom>
              Copyright info @Telegraph
             </Typography>
-            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+            <Typography id="footer2" variant="subtitle1" align="center" color="textSecondary" component="p">
                   All Rights Reserved @The Telegraph & co. 2020.                                 
             </Typography>
           </Container>

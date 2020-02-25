@@ -13,11 +13,11 @@ const Header = () => {
     const classes = useStyles();
     return (<header className={classes.header}>
         <Container maxWidth="lg">
-        <Typography component="div" variant="h3" align="center" gutterBottom> 
-        The Telegraph
+        <Typography id = "tHeader1" component="div" variant="h3" align="center" gutterBottom> 
+        The Telegraph Header 1
         </Typography>
-        <Typography component="div" variant="h5" align="center" gutterBottom> 
-        The Telegraph
+        <Typography id = "tHeader2"component="div" variant="h5" align="center" gutterBottom> 
+        The Telegraph Header 2
         </Typography>
       </Container>
     </header>);

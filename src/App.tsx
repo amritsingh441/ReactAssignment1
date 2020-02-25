@@ -15,6 +15,15 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.header}>
+    <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+
       <Header/>
       <Dashboard/>
       <Footer/>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import NewsService from '../../service/NewsService';
-import NewsCard from '../../Components/newscard/NewsCard';
+import Card from '../../Components/card/Card';
 import News from '../../model/News';
 
 const Dashboard = () => {
@@ -15,10 +15,10 @@ const Dashboard = () => {
             }
       })
       let newsCardsList = news.map((newsData: News) =>
-            <NewsCard key={newsData.urlToImage} nData={newsData}></NewsCard>)
+            <Card key={newsData.urlToImage} nData={newsData}></Card>)
       return (
             <Container maxWidth="lg">
-                  <Typography component="div" variant="h6" align="center" gutterBottom>
+                  <Typography id = "dashBoardHeading" component="div" variant="h6" align="center" gutterBottom>
                         News of The Day
                   <br />
                         {newsCardsList}

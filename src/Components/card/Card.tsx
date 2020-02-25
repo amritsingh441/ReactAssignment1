@@ -7,14 +7,14 @@ import Button from '@material-ui/core/Button';
 import SaveNews from '../../service/SaveNews'
 
 
-const NewsCard = (props: any) => {    
+const NewsCard = (props:any) => {    
 return <div>
         <Card>
             <CardContent>
-                <Link href="#">{props.nData.urlToImage}</Link>
-                <p>{props.nData.title}</p>
-                <p>{props.nData.author}</p>
-                <Button variant="contained" component="span" color="primary" onClick ={() => SaveNews(props.nData)}>Add To Favourites</Button>
+                <Link id="imageUrl" href="#">{props.nData.urlToImage}</Link>
+                <p id="title">{props.nData.title}</p>
+                <div id="author">{props.nData.author}</div>
+                <Button variant="contained" color="primary" onClick ={() => SaveNews(props.nData)}>Add To Favourites</Button>
             </CardContent>
         </Card>
     </div>
